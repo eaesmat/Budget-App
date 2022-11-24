@@ -58,13 +58,15 @@ git clone https://github.com/eaesmat/Budget-App.git
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/eaesmat/blog.git/issues).
+Feel free to check the [issues page](https://github.com/eaesmat/Budget-App.git/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
+
+The design has been inspired by: Gregoire Vella on Behance
 
 
 ## 📝 License
