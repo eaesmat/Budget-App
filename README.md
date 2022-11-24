@@ -17,7 +17,9 @@
 
 [Live Demo Link](https://dinmabudget.herokuapp.com/)
 
+## Video Demo
 
+[Video Demo Link](https://www.loom.com/share/29ce47d74b4441849790e77044462836)
 
 ## Getting Started
 
