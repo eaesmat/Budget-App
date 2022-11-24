@@ -1,0 +1,12 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @group %>
+<div class="rec_btn my-5">
+  <%= button_to "Delete this group", user_group_path, method: :delete, class: "btn btn-danger" %>
+  <%= link_to "Add New record", new_user_record_path, class: "btn btn-secondary" %>
+</div>
+ 
+
+<div class="link-new text-center">
+  <%= link_to "Back to groups", user_groups_path %>
+</div>

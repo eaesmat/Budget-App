@@ -1,15 +1,97 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  overflow: scroll;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.text,
+.text1 {
+  animation: 1s ease-out 0s 1 slideInLeft;
+  font-family: 'Rubik Moonrocks', sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.text {
+  color: #e1bee7;
+}
+
+img {
+  width: 80%;
+  height: 50px;
+}
+
+.cont {
+  background-size: contain;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(rgba(7, 7, 7, 0.75), rgba(12, 12, 12, 0.75)), url("https://img.freepik.com/premium-photo/falling-gold-coins-money-dark-background_26018-1711.jpg?w=740");
+}
+
+.cont-paragraph {
+  padding-inline: 8%;
+}
+
+.text-center {
+  text-shadow: 1px 1px 0 #201f1f;
+}
+
+.link-new {
+  margin: 4%;
+}
+
+.link-new a {
+  color: #fff;
+  background-color: #5fb523;
+  padding: 2% 30%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: baseline;
+  font-weight: 600;
+  color: #434b54;
+}
+
+.group_id,
+.record_id {
+  box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 15px 12px;
+  margin-bottom: 4%;
+  margin-inline: 10%;
+}
+
+.welcome {
+  font-size: large;
+  color: darkturquoise;
+  margin-bottom: 8%;
+  border-bottom: 1px solid;
+}
+
+.rec_btn {
+  display: flex;
+  justify-content: space-around;
+}
