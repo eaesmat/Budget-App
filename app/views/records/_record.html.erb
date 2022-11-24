@@ -1,0 +1,15 @@
+<div class="group_id py-1" >
+  <div class="flex">
+    <p>
+      <%= record.name %>
+    </p>
+
+    <p>
+      <%= record.amount %>
+    </p>
+  </div>
+  
+  <p class="my-3 text-center">
+    <%= link_to "Show this record",  user_record_path(current_user, record) %>
+  </p>
+</div>

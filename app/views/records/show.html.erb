@@ -1,0 +1,9 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @record %>
+
+<%= button_to "Delete this record", user_record_path, method: :delete, class: "btn btn-danger m-5" %>
+
+<div class="link-new text-center">
+  <%= link_to "Back to records", user_records_path %>
+</div>
