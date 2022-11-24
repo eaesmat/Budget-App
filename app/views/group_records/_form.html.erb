@@ -1,0 +1,27 @@
+<%= form_with(model: group_record) do |form| %>
+  <% if group_record.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(group_record.errors.count, "error") %> prohibited this group_record from being saved:</h2>
+
+      <ul>
+        <% group_record.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :group_id, style: "display: block" %>
+    <%= form.number_field :group_id %>
+  </div>
+
+  <div>
+    <%= form.label :record_id, style: "display: block" %>
+    <%= form.number_field :record_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

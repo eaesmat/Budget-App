@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<h1 class="text-center">Records</h1>
+<% if @records.empty? %>
+    <p class="text-center">No record added yet!</p>
+  <% end %>
+
+<div id="records">
+  <% @records.each do |record| %>
+    <%= render record %>
+  <% end %>
+</div>
+<div class="text-center link-new"">
+  <%= link_to "Add New record", new_user_record_path %>
+</div>

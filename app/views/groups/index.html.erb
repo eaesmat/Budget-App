@@ -1,0 +1,26 @@
+<p style="color: green"><%= notice %></p>
+<div class="text-center welcome">
+  <h6>Welcome <%= current_user.name %>, Here is a group of all your transaction </h6>
+</div>
+
+<h1 class="text-center text1">Group List</h1>
+  <% if @groups.empty? %>
+    <p class="text-center">No group added yet!</p>
+  <% end %>
+
+<div id="groups">
+  <div class="text-center">
+    <%= @total_records %>
+  </div>
+  <div>
+    <% current_user.groups.each do |group| %>
+      <%= render group %>
+    <% end %>
+  </div>
+
+</div>
+      <div class="text-center link-new">
+        <%= link_to "Add New group", new_user_group_path(current_user, @groups) %>
+      </div>
+</div>
+
